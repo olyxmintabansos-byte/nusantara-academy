@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --academy-navy: #0a1128;
+    --academy-gold: #c59b27;
+    --academy-ivory: #fdfbf7;
+    --academy-slate: #334155;
+  }
+
+  body {
+    background-color: #fdfbf7;
+    color: #1e293b;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: "Georgia", "Cambria", "Times New Roman", Times, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Subtle Parchment Texture */
+.parchment-bg {
+  background-color: #fdfbf7;
+  background-image: radial-gradient(#e2e8f0 0.75px, transparent 0.75px);
+  background-size: 20px 20px;
+}
+
+/* Gold Accent Border */
+.gold-seal-border {
+  border-image: linear-gradient(to right, #c59b27, #eab308, #c59b27) 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
